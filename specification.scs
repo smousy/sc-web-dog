@@ -1,1 +1,26 @@
-lalala
+dog_specification
+    <- concept_reusable_component_specification;;
+
+dog_specification = [*
+concept_dog
+    <- concept_reusable_component;
+    <- concept_atomic_reusable_component;
+    <- concept_independent_reusable_component;
+    <- concept_reusable_kb_component;
+    <- concept_reusable_dynamically_installed_component;
+    <- concept_reusable_source_code_component;
+
+    => nrel_sc_identifier: [Dog specification](* <- lang_en;; *);
+    => nrel_key_sc_element: concept_animal;
+    => nrel_purpose: [Dog specification is needed to design knowledge bases about animal world, pets and zoo.](* <- lang_en;; *);
+    => nrel_explanation: [Gav!!] (*<- lang_en;; *);
+    => nrel_authors: ... (* -> Smousy;; *);
+    => nrel_component_dependencies: ... (* <- empty_set;; *);
+
+    =>nrel_install_script: [./scripts/install.sh^ ./scripts/install_deps_ubuntu.sh]
+    =>nrel_run_script: [./scripts/run_scweb.sh]
+
+    => nrel_component_address: [https://github.com/smousy/sc-web-dog] (* <- github_url;; *);
+    => nrel_installation_method: ... (* <- concept_component_dynamically_installed_method;; *);;
+*];;
+
