@@ -17,8 +17,8 @@ concept_dog
     => nrel_authors: ... (* -> Smousy;; *);
     => nrel_component_dependencies: ... (* <- empty_set;; *);
 
-    =>nrel_install_script: [./scripts/install.sh^ ./scripts/install_deps_ubuntu.sh];
-    =>nrel_run_script: [./scripts/run_scweb.sh];
+    =>nrel_install_script: [./scripts/install.sh^ ./scripts/install_deps_ubuntu.sh](* <- lang_en;; *);
+    =>nrel_run_script: [./scripts/run_scweb.sh](* <- lang_en;; *);
 
     => nrel_component_address: [https://github.com/smousy/sc-web-dog] (* <- github_url;; *);
     => nrel_installation_method: ... (* <- concept_component_dynamically_installed_method;; *);;
