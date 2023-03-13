@@ -15,7 +15,8 @@ concept_dog
     => nrel_purpose: [Dog specification is needed to design knowledge bases about animal world, pets and zoo.](* <- lang_en;; *);
     => nrel_explanation: [Gav!!] (*<- lang_en;; *);
     => nrel_authors: ... (* -> Smousy;; *);
-    => nrel_component_dependencies: ... (* <- empty_set;; *);;
+    => nrel_component_dependencies: [scripts/install.sh] (* <- lang_en;; *);;
+    => nrel_component_dependencies: [scripts/install_deps_ubuntu.sh] (* <- lang_en;; *);;
 
 concept_dog
     => nrel_install_script: [ls && cd scripts/](* <- lang_en;; *);
